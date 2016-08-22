@@ -59,6 +59,7 @@ class PBar {
         PBar(size_t _n=0) : n(_n), cur(0), width(10), desc(""), units("iters") {}
         void reset( size_t _n );
         void start();
+        void finish();
         void set_description(std::string desc);
         void set_units(std::string units);
         void operator++();

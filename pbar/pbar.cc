@@ -196,10 +196,11 @@ void PBar::start() {
 
 /** stop the timer */
 void PBar::finish() { 
+    if ((this->n > 0) && (this->cur < this->n)){
+        this->cur = n;
+    } 
     std::chrono::system_clock::time_point endTime = system_clock::now();
     auto elapsed = endTime - this->startTime;
-
-    // update only at most every 1 second or at the end
     std::string meter_str = this->build_str_meter(this->desc, 
             this->cur,
             this->n, elapsed);
@@ -250,9 +251,9 @@ void PBar::operator++() {
                 this->n, elapsed);
         this->print_status(meter_str);
         this->lastCheck = endTime;
-        if ((this->cur >= this->n) and not(this -> n <= 0)){
-            std::cout << std::endl;
-        }
+        // if ((this->cur >= this->n) and not(this -> n <= 0)){
+        //    std::cout << std::endl;
+        // }
     }
 }
 
