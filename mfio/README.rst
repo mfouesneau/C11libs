@@ -60,17 +60,28 @@ Notes
 
 
 +--------------------------+---------------------------------------------------+
-| `AsciiReader`            | Constructor                                       | 
-| `count_lines`            | count the number of lines ignoring commented ones | 
-| `get_columns`            | returns which columns are used                    | 
-| `get_comment`            | which comment character                           | 
-| `get_delimiter`          | returns the delimiter                             | 
-| `get_header`             | returns the first non-commented line              | 
-| `get_next_value`         | parse next value into variable                    | 
-| `get_number_of_fields`   | counts the number of fields                       | 
-| `operator ++`            | buffer the next line                              | 
-| `set_columns`            | set columns to use                                | 
-| `set_comment`            | set comment definition                            | 
+| `AsciiReader`            | Constructor                                       |
++--------------------------+---------------------------------------------------+
+| `count_lines`            | count the number of lines ignoring commented ones |
++--------------------------+---------------------------------------------------+
+| `get_columns`            | returns which columns are used                    |
++--------------------------+---------------------------------------------------+
+| `get_comment`            | which comment character                           |
++--------------------------+---------------------------------------------------+
+| `get_delimiter`          | returns the delimiter                             |
++--------------------------+---------------------------------------------------+
+| `get_header`             | returns the first non-commented line              |
++--------------------------+---------------------------------------------------+
+| `get_next_value`         | parse next value into variable                    |
++--------------------------+---------------------------------------------------+
+| `get_number_of_fields`   | counts the number of fields                       |
++--------------------------+---------------------------------------------------+
+| `operator ++`            | buffer the next line                              |
++--------------------------+---------------------------------------------------+
+| `set_columns`            | set columns to use                                |
++--------------------------+---------------------------------------------------+
+| `set_comment`            | set comment definition                            |
++--------------------------+---------------------------------------------------+
 | `set_delimiter`          | set the delimiter                                 | 
 +--------------------------+---------------------------------------------------+
 
@@ -80,10 +91,16 @@ AsciiWriter
 
 +-----------------+-------------------------------+
 | `AsciiWriter`   | constructor                   | 
++-----------------+-------------------------------+
 | `get_comment`   | which comment character       | 
-| `get_delimiter` | returns the delimiter         | 
-| `operator ++`   | start a new line              | 
-| `operator <<`   | input data (value or vectors) | 
-| `set_comment`   | set comment definition        | 
++-----------------+-------------------------------+
+| `get_delimiter` | returns the delimiter         |
++-----------------+-------------------------------+
+| `operator ++`   | start a new line              |
++-----------------+-------------------------------+
+| `operator <<`   | input data (value or vectors) |
++-----------------+-------------------------------+
+| `set_comment`   | set comment definition        |
++-----------------+-------------------------------+
 | `set_delimiter` | set the delimiter             | 
 +-----------------+-------------------------------+
