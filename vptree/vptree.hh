@@ -14,6 +14,11 @@
  * sphere, using a centre and a radius. To make the search efficient, the nodes
  * should use the minimal sphere that completely contains all of its children,
  * and overlaps the least with other sibling spheres in the tree.
+ *
+ * other reference:
+ *
+ * Jeffrey K. Uhlmann (1991)
+ * http://www.sciencedirect.com/science/article/pii/002001909190074R?via%3Dihub
  */
 #pragma once
 #include <stdio.h>
