@@ -4,7 +4,7 @@ A VP-Tree implementation
 VP-Tree is similar to that a k-d tree, but uses circular (or hyperspherical)
 rather than rectilinear partitioning scheme. 
 
-This implementation is based on `Peter Yianilos (1993)`_ "Data Structures and
+This implementation is based on Peter Yianilos (1993) `[1]`_ "Data Structures and
 Algorithms for Nearest Neighbor Search" and Steve Hanovs's blog post 
 `VP trees - A data structure for finding stuff fast`_
 
@@ -35,7 +35,7 @@ and overlaps the least with other sibling spheres in the tree.
 References
 ----------
 
-.. _Peter Yianilos (1993): _http://pnylab.com/pny/papers/vptree/vptree.pdf
+.. _[1]: Peter Yianilos (1993) http://pnylab.com/pny/papers/vptree/vptree.pdf
 
 .. _VP trees - A data structure for finding stuff fast: http://stevehanov.ca/blog/index.php?id=130
 
